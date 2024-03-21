@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API TESTING</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        background: #002fff;
+        padding: 10px 0;
+        color: beige;
+        margin: 0;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 87.5vh;
+      }
+
+      img {
+        max-width: 100%;
+        transition: all 0.5s;
+        animation: rotate 2s ease-in-out infinite;
+        border-radius: 50%;
+        /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
+      }
+
+      img:hover{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        animation: none;
+        transition: all 0.5s;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        div .img {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">API is working Fine</h1>
+    <div style="text-align: center">
+      <img class="img" src="/images/users/default.jpg" alt="User Image" />
+    </div>
+    <h1 style="text-align: center">Please continue</h1>
+  </body>
+</html>
